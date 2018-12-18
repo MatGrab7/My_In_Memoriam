@@ -18,11 +18,9 @@ for (i in 1:liczba_probek){
 }
 
 #sortujemy dane, aby lepiej wygladaly na wykresie
-
 dane_losowe<-dane_losowe[order(dane_losowe$Possible.Impacts), ] 
 
-
-
+#szukamy maksymalnej wartosci wsrod wylosowanych
 maksimum=max(dane_losowe$Possible.Impacts, na.rm = TRUE)
 wiersz_maksimum=which.max(dane_losowe$Possible.Impacts)
 print(wiersz_maksimum)
